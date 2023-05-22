@@ -6,3 +6,12 @@
 # 6 -> 1  4  1
 # 24 -> 4  16  4
 # 60 -> 10  40  10
+
+num = int(input("Введите число журавликов: "))
+
+num_Petya_Serezha = num // 6
+num_Katya = 4 * num_Petya_Serezha
+
+print(f'Петя сделал {num_Petya_Serezha} журавликов', f'Катя сделала {num_Katya} журавликов',
+                f'Сережа сделал {num_Petya_Serezha} журавликов', sep='\n')
+

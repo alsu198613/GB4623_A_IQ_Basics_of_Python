@@ -8,3 +8,13 @@
 
 # 385916 -> yes
 # 123456 -> no
+number = input("Введите номер билета: ")
+if len(number) != 6 or not number.isdigit():
+    print("Неправильный номер билета")
+else:
+    first_half_sum = int(number[0]) + int(number[1]) + int(number[2])
+    second_half_sum = int(number[3]) + int(number[4]) + int(number[5])
+    if first_half_sum == second_half_sum:
+        print("Билет счастливый")
+    else:
+        print("Билет обычный")
