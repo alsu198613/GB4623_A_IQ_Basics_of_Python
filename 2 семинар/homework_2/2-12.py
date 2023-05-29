@@ -9,6 +9,12 @@
 summa = int(input("Введите сумму загаданных чисел: "))
 mult = int(input("Введите произведение загаданных чисел: "))
 
+# for i in range(1, summa + 1):
+#     for j in range(1, mult + 1):
+#         if i + j == summa and i * j == mult:
+#             print(i , j)
+
+# 2 
 for x in range(1, summa + 1):
     y = summa - x
     if x * y == mult:
