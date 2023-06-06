@@ -40,4 +40,14 @@ else:
     print("Ошибка: введено некорректное слово")
 print("Стоимость слова", word, "составляет", score, "очков.")
 
+# 2 вариант
+# dict={'AEIOULNSTR': 1, 'DG': 2, 'BCMP': 3, 'FHVWY': 4, 'K': 5, 'JX': 8, 'QZ': 10,
+#       'АВЕИНОРСТ': 1, 'ДКЛМПУ': 2, 'БГЁЬЯ': 3, 'ЙЫ': 4, 'ЖЗХЦЧ': 5, 'ШЭЮ': 8, 'ФЩЪ': 10}
 
+# word=input("\nВведите слово: ")
+# summ=0
+# for i in word:
+#     for key in dict:
+#         if i.upper() in key:
+#             summ+=dict[key]
+# print(f'Стоимость слова равна:{summ}')
