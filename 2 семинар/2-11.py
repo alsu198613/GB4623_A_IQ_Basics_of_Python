@@ -13,6 +13,7 @@ n = 2
 
 # Проверяем, является ли число A числом Фибоначчи
 while fib2 < a:
+    # fib1, fib2 = fib2, fib1 + fib2        вместо трех строк ниже 
     fib_sum = fib1 + fib2
     fib1 = fib2
     fib2 = fib_sum

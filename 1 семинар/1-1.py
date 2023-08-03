@@ -20,7 +20,11 @@ days = -(- m // n)
 import math
 days = math.ceil(m / n)
 
+#4 
+days = (m // n) + (m % n != 0)    
+
 print(days)
+
 
 
 
