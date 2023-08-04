@@ -36,3 +36,10 @@ for key in data:
     for value in key:
         result.add(key[value])
 print(result)  # {'S009', 'S002', 'S005', 'S001', 'S007'}
+
+#2
+s = set()
+for i in data:
+    for value in i.values():
+        s.add(value)
+print(s)
