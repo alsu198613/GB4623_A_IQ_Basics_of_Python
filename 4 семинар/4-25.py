@@ -23,5 +23,18 @@ for i in stroka:
         print(f'{i}_{result[i]}', end=' ')
     else:
         print(i, end=' ')
-    result[i] = result.get(i, 0) + 1  # 0 - значение по умолчания (default)
+    result[i] = result.get(i, 0) + 1  # 0 - значение, когда get находит указанное значение
+print(result)
+
+# 3
+text = input('Введите символы: ').split()
+letter = {}
+result = ''
+for i in text:
+    if i not in letter:
+        letter[i] = 1
+        result += f'{i} '
+    else:
+        result += f'{i}_{letter[i]} ' 
+        letter[i] += 1
 print(result)
